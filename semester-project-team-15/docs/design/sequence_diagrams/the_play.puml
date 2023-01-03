@@ -1,0 +1,35 @@
+@startuml the_play
+[-> ": round": executeThePlay
+
+activate ": round"
+
+participant "nonDealer : Player"
+participant "dealer : Player"
+participant "nonDealerHand : Hand"
+participant "dealerHand : Hand"
+participant "table : Table"
+participant ": Player"
+
+": round" -> "nonDealer : Player" : startPlay()
+
+loop while ( !nonDealerHand.isEmpty() && !dealerHand.isEmpty() )
+
+alt if ( nonDealerHand.hasPlayableCard() )
+
+"nonDealer : Player" -> "nonDealerHand : Hand" : card = selectCard(num)
+"nonDealerHand : Hand" -> "table : Table" : table.addToTable(card)
+"table : Table" -> "table : Table" : table.addToRunningTotal(card)
+"nonDealer : Player" -> "nonDealer : Player" : points = addPoints()
+"round" -> if 
+
+else else
+
+"dealer : Player" -> "dealerHand : Hand" : card = selectCard(num)
+"dealerHand : Hand" -> "table : Table" : table.addToTable(card)
+"table : Table" -> "table : Table" : table.addToRunningTotal(card)
+"dealer : Player" -> "dealer : Player" : points = addPoints()
+
+end
+end
+
+@enduml

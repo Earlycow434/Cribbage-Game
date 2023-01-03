@@ -1,0 +1,131 @@
+@startuml system_model
+skinparam linetype ortho
+skinparam style strictuml
+skinparam ArrowColor #black
+hide empty members
+
+/' Declarations '/
+
+enum Suit << enumeration >> {
+    Spades
+    Clubs
+    Diamonds
+    Hearts
+}
+
+class Card {
+    -suit: Suit
+    -rank: int
+    -value: int
+    <<constructor>>Card(Suit, int, int)
+    +Suit getSuit()
+    +int getRank()
+    +int getValue()
+}
+
+interface CardStack {
+    -cards: ArrayList<Card>
+}
+
+class Deck {
+    <<constructor>> Deck()
+    +Card drawCard()
+    +Card cut(int)
+}
+
+class Hand {
+    <<constructor>> Hand()
+    +void addCard(Card)
+    +Card selectCard(int)
+    +Boolean isEmpty()
+}
+
+class Crib {
+    <<constructor>> Crib()
+    +void addCard(card: Card)
+    +ArrayList<Card> getCardStack()
+}
+
+class Peg {
+    -position: int
+    -track: short
+    <<constructor>> Peg(int, short)
+    +void incrementPosition(int)
+    +int getPosition()
+    +short getTrack()
+}
+
+class CribbageBoard {
+    -ArrayList<Peg> pegs
+    <<constructor>> CribbageBoard(ArrayList<Pegs>, ArrayList<Pegs>)
+    +Peg getPeg(index: int)
+    +void setPeg(index: int)
+}
+
+class Player {
+    -currenthand: Hand
+    -originalHand: Hand
+    -points: int = 0
+    -isDealer: Boolean = false
+    -isPlaying: Boolean = false
+    <<constructor>> Player()
+    +Hand getCurrentHand()
+    +Hand getOriginalHand()
+    +void setHand(Hand)
+    +void resetHand()
+    +int getPoints()
+    +void setPoints(int)
+    +void setDealer(Boolean)
+    +Boolean isDealer()
+    +Boolean isPlaying()
+}
+
+class Table {
+    -runningPointsTotal: int = 0
+    <<constructor>> Table()
+    +void placeCard(Card)
+    +void incrementRunningTotal(Card)
+    +int getRunningPointsTotal()
+    +ArrayList<Card> getPlayedCards()
+    +void resetPlayedCards()
+}
+
+class Round {
+    -starterCard: Card
+    -dealer: Dealer
+    -nonDealer: NonDealer
+    -dealerOriginalHand: Hand
+    -nonDealerOriginalHand: Hand
+    -deck: Deck
+    -crib: Crib
+    -void executeTheDeal()
+    -void executeThePlay()
+    -void executeTheShow()
+    <<constructor>> Round()
+    +Boolean play()
+}
+
+class CribbageGame {
+    -playerHasWon: Boolean
+    -starterDeck: Deck
+    <<constructor>> CribbageGame()
+}
+/' Relationships '/
+
+class Deck implements CardStack
+class Hand implements CardStack
+class Crib implements CardStack
+class Table implements CardStack
+
+CardStack "1" o-- "*" Card
+CribbageBoard "1" o-- "4..6" Peg
+Player "2..3" --- "1" Crib : discards >
+Round "1" ---- "1" Card : starter <
+Round "1" ---- "2" Hand
+Round "1" ---- "1" Deck
+CribbageGame "1" o-- "2..3" Player
+CribbageGame "1" o-- Round
+CribbageGame "1" o-- "1" Deck
+CribbageGame "1" o-- "1" CribbageBoard
+
+@enduml

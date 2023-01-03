@@ -1,0 +1,37 @@
+@startuml the_show
+
+[-> "round : Round": executeTheShow()
+
+
+participant "round : Round"
+participant "nonDealer : Player"
+participant "nonDealerOriginalHand : Hand"
+participant "dealer : Player"
+participant "dealerOriginalHand : Hand"
+participant "crib : Crib"
+participant "starterCard : Card"
+
+"round : Round" -> "nonDealer : Player": startShow()
+
+loop while n<4
+"nonDealer : Player" -> "nonDealerOriginalHand : Hand": hand.at(n)=nonDealerOriginalHand.selectCard(n)
+end
+"nonDealer : Player" -> "starterCard : Card": hand.add(starterCard)
+"nonDealer : Player" -> "nonDealer : Player": checkPointsTheShow();
+
+loop 4 while n<4
+"dealer : Player" -> "dealerOriginalHand : Hand": hand.at(n)=dealerOriginalHand.selectCard(n)
+end
+"dealer : Player" -> "starterCard : Card": hand.add(starterCard)
+"dealer : Player" -> "dealer : Player": checkPointsTheShow();
+
+loop 4 while n<4
+"dealer : Player" -> "crib : Crib": hand.at(n)=crib.getCardStack().at(n)
+end
+"dealer : Player" -> "dealer : Player": checkPointsTheShowCrib();
+
+
+
+
+
+@enduml

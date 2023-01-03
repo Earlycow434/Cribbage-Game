@@ -1,0 +1,101 @@
+@startuml Domain Model
+skinparam linetype ortho
+skinparam style strictuml
+skinparam ArrowColor #black
+hide empty members
+
+class "Player" as Player {
+    points
+    isPlaying
+}
+
+class "Card" as Card {
+    rank
+    suit
+    facingUp
+}
+
+class "Deck" as Deck {
+    cardStack
+}
+
+class "Hand" as Hand {
+    cardStack
+}
+
+class "Peg" as Peg {
+    position
+}
+
+class "Crib" as Crib {
+    cardStack
+}
+
+class "CribbageGame" as CribbageGame {
+    runningPointsTotal
+    pointsLimit
+}
+
+class "CribbageBoard" as CribbageBoard {
+    pegs
+}
+
+class "Dealer" as Dealer {
+
+}
+
+class "NonDealer" as NonDealer {
+
+}
+
+class "Round" as Round {
+
+}
+
+class "StarterCard" as StarterCard {
+
+}
+
+class "Table" as Table {
+    playedCards
+    scoreLimit
+}
+
+Deck "1" o-- "0..52" Card
+
+CribbageBoard "1" o-- "4" Peg 
+
+Hand "1" o-- "0..6" Card
+
+Crib "1" o-- "0..4" Card
+
+Player "1" o-- "2" Peg
+
+Player "1" --  "1" Hand
+
+Player -- Deck : cutting >
+
+Player <|-- Dealer
+
+Player <|-- NonDealer
+
+Dealer "1" --- "12" Card : draws >
+
+Dealer "1" o-- "1" Crib
+
+Player -- "2" Crib : discards card >
+
+Card <|-- StarterCard
+
+NonDealer - StarterCard : draws >
+
+CribbageGame "1" o-- "*" Round
+
+Round "1" o--- "1" Dealer
+Round "1" o--- "1" NonDealer
+
+Player --- CribbageBoard : moves peg >
+
+Player -- Table : plays card >
+
+@enduml

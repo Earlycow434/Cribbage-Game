@@ -1,0 +1,61 @@
+@startuml the_deal
+
+[-> "round : Round": executeTheDeal()
+
+
+participant "round : Round"
+participant "dealer : Player"
+participant "dealerHand : Hand"
+participant "nonDealer : Player"
+participant "nonDealerHand : Hand"
+participant "deck : Deck"
+participant "crib : Crib"
+participant "starterCard : Card"
+participant "dealerOriginalHand : Hand"
+participant "nonDealerOriginalHand : Hand"
+
+"round : Round" -> "dealer : Player": starterCard = startDeal()
+
+
+loop 6 times
+
+"dealer : Player" -> "deck : Deck": card=drawCard()
+"dealer : Player" -> "dealerHand : Hand": dealerHand.addCard(card)
+
+end 
+
+
+
+loop 6 times
+
+"nonDealer : Player" -> "deck : Deck": card=drawCard()
+"nonDealer : Player" -> "nonDealerHand : Hand": nonDealerHand.addCard(card)
+
+end 
+
+
+
+loop 2 times
+"dealer : Player" -> "dealerHand : Hand": card=selectCard(num)
+"dealer : Player" -> "crib : Crib": crib.addToCrib(card)
+end
+
+loop 2 times
+"nonDealer : Player" -> "nonDealerHand : Hand": card=selectCard(num)
+"nonDealer : Player" -> "crib : Crib": crib.addToCrib(card)
+end
+
+"dealerHand : Hand" -> "dealerOriginalHand : Hand": dealerOriginalHand=dealerHand
+"nonDealerHand : Hand" -> "nonDealerOriginalHand : Hand": nonDealerOriginalHand=nonDealerHand
+
+
+"dealer : Player" -> "deck : Deck": starterCard=deck.cut(num)
+
+alt if ( starterCard.rank==11 )
+"dealer : Player" -> "dealer : Player": checkPointsTheDeal()
+
+end
+
+
+
+@enduml

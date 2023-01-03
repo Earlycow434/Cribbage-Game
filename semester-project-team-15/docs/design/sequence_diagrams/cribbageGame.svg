@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="683px" preserveAspectRatio="none" style="width:786px;height:683px;background:#FFFFFF;" version="1.1" viewBox="0 0 786 683" width="786px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="116.8867" style="stroke:#000000;stroke-width:1.5;" width="390" x="337" y="236.5742"/><rect fill="none" height="263.8379" style="stroke:#000000;stroke-width:1.5;" width="623" x="10" y="367.4609"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="82" x2="82" y1="36.4883" y2="648.2988"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="280" x2="280" y1="415.5156" y2="648.2988"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="406" x2="406" y1="77.2324" y2="648.2988"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="564" x2="564" y1="118.7207" y2="648.2988"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="734.5" x2="734.5" y1="160.209" y2="648.2988"/><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="20" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="27" y="25.5352">: CribbageGame</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="20" y="647.2988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="27" y="667.834">: CribbageGame</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="224" y="647.2988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="231" y="667.834">round : Round</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="347" y="647.2988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="354" y="667.834">player1 : Player</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="505" y="647.2988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="512" y="667.834">player2 : Player</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="689.5" y="647.2988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="696.5" y="667.834">deck : Deck</text><polygon fill="#181818" points="335,63.7988,345,67.7988,335,71.7988,339,67.7988" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="341" y1="67.7988" y2="67.7988"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="89" y="63.0566">new(Player): player1</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="347" y="46.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="354" y="67.0234">player1 : Player</text><polygon fill="#181818" points="493,105.2871,503,109.2871,493,113.2871,497,109.2871" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="499" y1="109.2871" y2="109.2871"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="89" y="104.5449">new(Player): player2</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="505" y="87.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="512" y="108.5117">player2 : Player</text><polygon fill="#181818" points="677.5,146.7754,687.5,150.7754,677.5,154.7754,681.5,150.7754" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="683.5" y1="150.7754" y2="150.7754"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="89" y="146.0332">new(Deck): deck</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="689.5" y="129.4648"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="696.5" y="150">deck : Deck</text><polygon fill="#181818" points="723,188.2637,733,192.2637,723,196.2637,727,192.2637" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="406" x2="729" y1="192.2637" y2="192.2637"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="413" y="187.5215">player1Cut = cutCard(i)</text><polygon fill="#181818" points="723,217.5742,733,221.5742,723,225.5742,727,221.5742" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="564" x2="729" y1="221.5742" y2="221.5742"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="571" y="216.832">player2Cut = cutCard(i)</text><path d="M337,236.5742 L399,236.5742 L399,243.8848 L389,253.8848 L337,253.8848 L337,236.5742 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="116.8867" style="stroke:#000000;stroke-width:1.5;" width="390" x="337" y="236.5742"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="352" y="250.1426">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="174" x="414" y="249.209">[if ( player1Cut &gt; player2Cut )]</text><line style="stroke:#181818;stroke-width:1.0;" x1="406" x2="448" y1="275.1953" y2="275.1953"/><line style="stroke:#181818;stroke-width:1.0;" x1="448" x2="448" y1="275.1953" y2="288.1953"/><line style="stroke:#181818;stroke-width:1.0;" x1="407" x2="448" y1="288.1953" y2="288.1953"/><polygon fill="#181818" points="417,284.1953,407,288.1953,417,292.1953,413,288.1953" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="413" y="270.4531">player1.isDealer = true</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="337" x2="727" y1="297.1953" y2="297.1953"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="30" x="342" y="307.8301">[else]</text><line style="stroke:#181818;stroke-width:1.0;" x1="564" x2="606" y1="332.4609" y2="332.4609"/><line style="stroke:#181818;stroke-width:1.0;" x1="606" x2="606" y1="332.4609" y2="345.4609"/><line style="stroke:#181818;stroke-width:1.0;" x1="565" x2="606" y1="345.4609" y2="345.4609"/><polygon fill="#181818" points="575,341.4609,565,345.4609,575,349.4609,571,345.4609" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="571" y="327.7188">player2.isDealer = true</text><path d="M10,367.4609 L84,367.4609 L84,374.7715 L74,384.7715 L10,384.7715 L10,367.4609 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="263.8379" style="stroke:#000000;stroke-width:1.5;" width="623" x="10" y="367.4609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="25" y="381.0293">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="144" x="99" y="380.0957">[while (! playerHasWon())]</text><polygon fill="#181818" points="212,402.082,222,406.082,212,410.082,216,406.082" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="218" y1="406.082" y2="406.082"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="89" y="401.3398">new(Round): round</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="224" y="384.7715"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="231" y="405.3066">round : Round</text><polygon fill="#181818" points="268.5,443.5703,278.5,447.5703,268.5,451.5703,272.5,447.5703" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="274.5" y1="447.5703" y2="447.5703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="89" y="442.8281">playerHasWon = play()</text><rect fill="none" height="53.5762" style="stroke:#000000;stroke-width:1.5;" width="405" x="221" y="455.5703"/><path d="M221,455.5703 L285,455.5703 L285,462.5703 L275,472.5703 L221,472.5703 L221,455.5703 " fill="#EEEEEE" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="234" y="470.1387">ref</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="52" x="397.5" y="488.1719">The Deal</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="421.5" y="502.3047"> </text><rect fill="none" height="53.5762" style="stroke:#000000;stroke-width:1.5;" width="405" x="221" y="514.1465"/><path d="M221,514.1465 L285,514.1465 L285,521.1465 L275,531.1465 L221,531.1465 L221,514.1465 " fill="#EEEEEE" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="234" y="528.7148">ref</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="399" y="546.748">The Play</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="421.5" y="560.8809"> </text><rect fill="none" height="53.5762" style="stroke:#000000;stroke-width:1.5;" width="405" x="221" y="572.7227"/><path d="M221,572.7227 L285,572.7227 L285,579.7227 L275,589.7227 L221,589.7227 L221,572.7227 " fill="#EEEEEE" style="stroke:#000000;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="234" y="587.291">ref</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="396" y="605.3242">The Show</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="4" x="421.5" y="619.457"> </text><!--MD5=[7e4f45e640f3b5511516ce5b92b8e079]
+@startuml cribbageGame
+participant ": CribbageGame"
+participant "round : Round"
+participant "player1 : Player"
+participant "player2 : Player"
+participant "deck : Deck"
+
+
+
+create "player1 : Player" 
+": CribbageGame" ->  "player1 : Player" : new(Player): player1
+
+create "player2 : Player"
+": CribbageGame" ->  "player2 : Player" : new(Player): player2
+
+create "deck : Deck"
+": CribbageGame" ->  "deck : Deck" : new(Deck): deck
+
+"player1 : Player" -> "deck : Deck" : player1Cut = cutCard(i)
+
+"player2 : Player" -> "deck : Deck" : player2Cut = cutCard(i)
+
+alt if ( player1Cut > player2Cut )
+"player1 : Player" -> "player1 : Player" : player1.isDealer = true
+
+else else
+"player2 : Player" -> "player2 : Player" : player2.isDealer = true
+
+end
+
+
+
+
+
+
+
+
+loop while (! playerHasWon())
+
+create "round : Round"
+": CribbageGame" -> "round : Round" : new(Round): round
+
+": CribbageGame" -> "round : Round" : playerHasWon = play()
+
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Deal
+
+end
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Play
+
+end
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Show
+
+end
+
+end
+
+@enduml
+
+PlantUML version 1.2022.10(Fri Oct 21 11:50:02 CDT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

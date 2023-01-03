@@ -1,0 +1,60 @@
+@startuml cribbageGame
+participant ": CribbageGame"
+participant "round : Round"
+participant "player1 : Player"
+participant "player2 : Player"
+participant "deck : Deck"
+
+
+
+create "player1 : Player" 
+": CribbageGame" ->  "player1 : Player" : new(Player): player1
+
+create "player2 : Player"
+": CribbageGame" ->  "player2 : Player" : new(Player): player2
+
+create "deck : Deck"
+": CribbageGame" ->  "deck : Deck" : new(Deck): deck
+
+"player1 : Player" -> "deck : Deck" : player1Cut = cutCard(i)
+
+"player2 : Player" -> "deck : Deck" : player2Cut = cutCard(i)
+
+alt if ( player1Cut > player2Cut )
+"player1 : Player" -> "player1 : Player" : player1.isDealer = true
+
+else else
+"player2 : Player" -> "player2 : Player" : player2.isDealer = true
+
+end
+
+
+
+
+
+
+
+
+loop while (! playerHasWon())
+
+create "round : Round"
+": CribbageGame" -> "round : Round" : new(Round): round
+
+": CribbageGame" -> "round : Round" : playerHasWon = play()
+
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Deal
+
+end
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Play
+
+end
+ref over "player1 : Player", "player2 : Player", "round : Round" 
+The Show
+
+end
+
+end
+
+@enduml
